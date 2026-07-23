@@ -3,18 +3,18 @@
     }
       body{
         padding: 70px 0 0 0;
-        margin: 0;
+        margin: 0 auto;
         background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color:purple ;
+        color:rgb(177, 4, 177) ;
       }
+    
       header{
         display: flex;
         justify-content:space-between;
-        flex-flow: row;
         align-items: center;
         position: fixed;
         top: 0;
@@ -22,13 +22,17 @@
         margin: 0;
         width: 100%;
         background-color: black;
+        
       }
       header ul{
         display: flex;
-        gap: 5px;
+        justify-content: flex-end;
+        gap: 2rem;
         list-style: none;
         margin: 0;
-        font-size: 11px;
+        font-size: 12px;
+        font-weight: 700;
+        padding-right: 10px;
       }
       .H-1{
         flex: 1;
@@ -36,21 +40,27 @@
       }
       .H-2{
         flex: 1;
-        text-align: left;
-        padding-right:10px;
+        text-align:left;
+        padding-left: 2rem;
       }
       div button{
         border-radius: 10px;
         border-style: none;
       }
+      .fb-div{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
       .Fb{
-        background-color: purple;
+        background-color:rgba(71, 7, 71, 0.829);
         color: white;
         font-size: 10px;
         border-radius: 20px;
         border-width: 1px;
         border-style: solid;
-        border-color:purple;
+        border-color:rgb(71, 7, 71, 0.829);
         padding: 4px 12px 4px 12px;
         transition-duration: 0.2s;
       }
@@ -77,26 +87,31 @@
       justify-content: center;
       align-items: center;
       color: white;
-      font-size: 30px;
+      font-size: 4rem;
       font-weight: bold;
+      margin-top: 2rem;
       margin-bottom: 5px;
     }
     .M-D1 span{
-      color: purple;
+      color:rgba(92, 6, 92, 0.829);
       margin-left: 5px;
     }
     .M-D2{
-      font-size: 16px;
+      font-size: 2rem;
     }
     .M-B{
       display: flex;
-      gap: 3px;
+      justify-content: center;
+      gap:10px;
+      width: auto;
+      height: 50px;
     }
     .M-B1{
       background-color: purple;
       color: white;
-      padding: 10px 10px 10px 10px;
-      border-radius: 20px;
+      align-items: center;
+      padding: 5px 15px 5px 15px;
+      border-radius: 25px;
       border-width: 1px;
       border-style: solid;
       border-color:purple;
@@ -113,9 +128,9 @@
     .M-B2{
       background-color: black;
       color: purple;
-      padding: 10px 10px 10px 10px;
-      border-radius: 20px;
-      border-color: purple;
+      padding: 5px 15px 5px 15px;
+      border-radius: 25px;
+      border-color: rgba(92, 6, 92, 0.829);
       border-width: 1px;
       border-style:solid;
       transition-duration: 0.2s;
@@ -157,15 +172,16 @@
       gap: 10px;
       margin-left: 10px;
       margin-right: 10px;
+      
     }
     .iteams{
       min-width: 10px;
       padding-left: 5px;
       padding-bottom: 15px;
-      background-color: gray;
-      border-radius: 10px;
+      background-color: rgba(109, 104, 104, 0.116);
+      border-radius: 15px;
       border-width: 2px;
-      border-color:grey;
+      border-color: #a020f0;
       flex: 1;
     }
      .iteams-button {
@@ -173,7 +189,7 @@
        border-radius: 20px;
        border-width: 1px;
        border-style:solid;
-       background-color: gray;
+       background-color:rgba(109, 104, 104, 0.116);
        color:white ;
        padding: 5px 5px;
        margin: 3px;
@@ -223,10 +239,15 @@
       border-style:solid;
       border-color: purple;
       background-color: black;
+      color: white;
       margin: 8px 0 8px 0;
     }
-    .connect placeholder{
+    input:focus {
+      outline: none;
+      border-color: #a020f0; /* or whatever matches your purple theme */
+      box-shadow: 0 0 0 1px rgba(160, 32, 240, 0.4);
       color: white;
+      background-color: transparent;
     }
     .connect label{
       color: white;
@@ -237,4 +258,37 @@
     .ST{
       padding-left: 13px;
       color: white;
+    }
+    .submit{
+     background-color: purple;
+     color: white;
+     padding-top: 5px;
+     padding-right: 15px;
+     padding-bottom: 5px;
+     padding-left: 15px;
+     transition: 0.2s;
+    }
+    .submit:hover{
+      background-color: purple;
+      opacity: 0.7;
+    }
+    /*.submit:active{
+      background-color: purple;
+      color: white;
+    }*/
+
+    @media (min-width: 768px) {
+      .M-D1{
+        font-size: 2rem;
+      }
+      .box-iteams{
+        flex-direction: column;
+        width: 0 auto;
+      }
+      .connect-box{
+        flex-direction: column;
+      }
+      .about-space{
+        display: block;
+      }
     }
